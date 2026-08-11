@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "csvconv"
+version = "0.1.0"
+description = "Convert CSV files to SQLite databases and SQLite tables to CSV files."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [
+    {name = "KillerCD"}
+]
+
+[project.scripts]
+csvconv = "csvconv:main"
+
+[tool.setuptools]
+py-modules = ["csvconv"]
